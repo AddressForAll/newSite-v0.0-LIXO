@@ -1,0 +1,950 @@
+/* DEFINIÇÕES INICIAIS */
+
+/* As classes wrapper e body definem os parâmetros do corpo geral da página */
+
+*{
+	margin:0px;
+	padding:0px;
+	vertical-align:middle;
+}
+
+.wrapper{
+	width:100%;
+	background-color:#FFFFFF;
+}
+
+.body{
+	width:100%;
+	
+}
+
+/* MENU SUPERIOR */
+
+/* Classes de estilo do corpo da navbar */
+
+.navbar{
+	width:100%;
+	height:10%;
+	padding:2%0%2%0%;
+	background-color:#0B64E1;
+}
+
+.navbar-logo{
+	width:10%;
+	height:100%;
+	margin-left:5%;
+	float:left;
+	background-image:url(images/navbar/logotipo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.navbar-content{
+	width:85%;
+	height:100%;
+	float:right;
+}
+
+.navbar-menu{
+	width:60%;
+	margin-left:5%;
+	float:left;
+}
+
+/* Classes de estilo do corpo da navbar mobile */
+
+.navbar-mobile{
+	display:none;
+}
+
+/* Classes de estilo dos links da navbar */
+
+.navbar-link{
+	margin-left:5%;
+	color:#FFFFFF;
+	font-family:Montserrat;
+	text-align:justify;
+	font-size:18px;
+	letter-spacing:0;
+	text-decoration:none;
+}
+
+.navbar-link:hover{
+	color:#DEDEDE;
+}
+
+/* Classes de estilo que controlam as os ícones da navbar */
+
+.material-icons{
+	color:#FFFFFF!important;
+}
+
+.navbar-icons{
+	width:10%;
+	margin-left:5%;
+	float:left;
+}
+
+.git{
+	width:45%;
+	height:45%;
+	float:left;
+	background-image:url(images/navbar/git-icon.png)!important;
+	background-repeat:no-repeat!important;
+	background-size:contain!important;
+}
+
+.dadosabertos{
+	width:45%;
+	height:45%;
+	float:left;
+	background-image:url(images/navbar/dadosabertos-icon.png)!important;
+	background-repeat:no-repeat!important;
+	background-size:contain!important;
+}
+
+/* Classe do seletor de linguagem */
+
+.language-selector{
+	width:10%;
+	margin-left:5%;
+	float:left;
+	color:#FFFFFF;
+	font-family:Montserrat;
+	text-align:justify;
+	font-size:18px;
+	letter-spacing:0;
+	text-decoration:none;
+
+}
+
+/* CABEÇALHO */
+
+/* Classe de estilo do corpo do cabeçario */
+
+
+.header{
+	width:80%;
+	margin:0% 10% 0% 10%;
+	float:right;
+	color:#2F281E;
+	font-family:Montserrat;
+	text-align:justify;
+	letter-spacing:0;
+}
+
+/* Classe de estilo dos elementos do cabeçario */
+
+.title{
+	font-size:50px;
+	line-height:1.5em;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.description{
+	font-size:25px;
+	line-height:1.5em;
+}
+
+/* CONTEÚDO */
+
+/* Classe de estilo do corpo do coneúdo */
+
+.content{
+	width:80%;
+	margin:0% 10% 0% 10%;
+	float:right;
+	font-family:Montserrat;
+	text-align:justify;
+	letter-spacing:0;
+}
+
+/* Classe de estilo dos elementos do coneúdo */
+
+.subtitle{
+	font-size:30px;
+	line-height:1.5em;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.text{
+	font-size:20px;
+	line-height:1.5em;
+	text-decoration:none;
+}
+
+/* Classes de estilo dos links do conteúdo */
+
+.content-link{
+	color:#3CC5FF;
+	font-size:20px;
+	line-height:1.5em;
+	text-decoration:none;
+}
+
+.content-link:hover{
+	color:#11B5E4;
+}
+
+/* RODAPÉ */
+
+/* Classes de estilo do corpo do rodapé */
+
+.footer{
+	width:70%;
+	padding:10%15%0%15%;
+	height:40%;
+	background-color:#0B64E1;
+	clear:both;
+}
+
+.footer-content{
+	width:100%;
+}
+
+/* Classes de estilo dos elementos do rodapé */
+
+.footer-logo{
+	width:20%;
+	height:25%;
+	margin-right:5%;
+	float:left;
+	background-image:url(images/navbar/logotipo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.sitemap{
+	width:75%;
+	float:left;
+	color:#FFFFFF;
+	font-family:Montserrat;
+	text-align:justify;
+	font-size:18px;
+	line-height:2em;
+	letter-spacing:0;
+	text-decoration:none;
+}
+
+/* Classes de estilo dos links do rodapé */
+
+.footer-link{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.footer-link:hover{
+	color:#DEDEDE;
+}
+
+.sitemap-column{
+	width:25%;
+	margin-left:5%;
+	float:left;
+}
+
+/* Classes de estilo do rodapé mobile*/
+
+.footer-mobile{
+	display:none;
+}
+
+/* ELEMENTOS GERAIS */
+
+/* A classe space é quivalente a quatro quebras de linha e a classe halfspace a duas. A primeira é utilizada para separar seçoes e a segunda para separar parágrafos */
+
+.space{
+    width:100%;
+	height:100px;
+    float:right;
+}
+
+.halfspace{
+	width:100%;
+	height:50px;
+    float:right;
+}
+
+/* Classes de estilo dos botões */
+
+
+.button-primary{
+	width:50%;
+	padding:3%;
+	border:0px;
+	border-color:#0B64E1;
+	background-color:#0B64E1;
+	color:#FFFFFF;
+	font-size:15px;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.button-primary:hover{
+	background-color:#3CC5FF;
+	color:#FFFFFF;
+}
+
+.button-secondary{
+	padding:2%;
+	border:0px;
+	border-color:#3CC5FF;
+	background-color:#3CC5FF;
+	color:#FFFFFF;
+	font-size:15px;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.button-secondary:hover{
+	background-color:#FFFFFF;
+	color:#979797;
+}
+
+/* Classes de estilo de carrosel, a classe partner é usada nos logotipos de parceiros nas páginas de Contato e Contribua e a classe member para os membros da página de Quem Somos */
+
+.carousel{
+	width:100%;
+}
+
+.partner{
+	width:225px;
+	height:135px;
+}
+
+.member{
+	width:100px;
+	height:100px;
+}
+
+/* Classes de estilo de seções */
+
+.section{
+	width:100%;
+	height:40%;
+	float:left;
+	background-color:#0B64E1;
+}
+
+.section-logo{
+	width:20%;
+    height:40%;
+    margin: 5% 5% 5% 15%;
+    float:left;
+    background-image:url(images/navbar/logotipo.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.section-content{
+	width:50%;
+    height:100%;
+    float:left;
+	font-family:Montserrat;
+	text-align:justify;
+	letter-spacing:0;
+}
+
+.section-text{
+    font-size:20px;
+    line-height:1.5em;
+    text-decoration:none;
+    color:#FFFFFF;
+    padding: 8% 0% 4% 0%;
+}
+
+/* HOMEPAGE */
+
+/* Classe de estilo do corpo do cabeçario da homepage */
+
+
+.homepage-header{
+	width:45%;
+	height:30%;
+    margin: 0% 10% 0% 10%;
+    float:left;
+    color:#2F281E;
+    font-family:Montserrat;
+    text-align:justify;
+    letter-spacing:0;
+}
+
+.homepage-player{
+    width: 25%;
+    height: 30%;
+    margin: 0% 10% 0% 0%;
+    float: left;
+    background-image: url(images/homepage/player.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+}
+
+/* Classe de estilo dos elementos do cabeçario da homepage */
+
+.homepage-title{
+	font-size:50px;
+	line-height:1.5em;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.homepage-description{
+	font-size:25px;
+	line-height:1.5em;
+}
+
+/* Classe de estilo dos elementos de busca da homepage */
+
+.homepage-search{
+    width:25%;
+    height:50%;
+    padding:4%;
+    margin: 0% 0% 0% 0%;
+    float:left;
+}
+
+.homepage-input{
+	width:100%;
+	height:40%;
+	margin: 10% 0% 10% 0%;
+	border:0px;
+	border-radius:10px;
+	font-family:Montserrat;
+	line-height:1.5em;
+	text-align:center;
+	font-size:20px;
+	color:#979797;
+}
+
+
+/* PROJETOS */
+
+/* Classes de estilo dos projetos */
+
+.projects{
+	width:100%;
+}
+
+.card{
+	width:28%;
+    padding:2%;
+    margin:2% 0% 0% 0%;
+    float:left;
+}
+
+.card-image{
+	height:30%;
+    background-color:#0B64E1;
+}
+
+.card-title{
+	height:7%;
+	font-size:20px;
+	line-height:1.5em;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.card-text{
+	height:15%;
+	font-size:15px;
+	line-height:1.5em;
+	text-decoration:none;
+}
+
+.card-button{
+	width:100%;
+	padding:3%;
+	border:0px;
+	border-color:#0B64E1;
+	background-color:#0B64E1;
+	color:#FFFFFF;
+	font-size:15px;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.card-button:hover{
+	background-color:#3CC5FF;
+	color:#FFFFFF;
+}
+
+/* FORMULÁRIO DE CONTATO */
+
+/* Classes de estilo dos formulários de contato */
+
+.contact-form{
+	width:60%;
+	height:40%;
+	padding:10%20%10%20%;
+	float:right;
+	font-family:Montserrat;
+	text-align:justify;
+	letter-spacing:0;
+	background-color:#0B64E1;
+}
+
+.contact-textarea{
+	width:100%;
+	height:80%;
+	padding:10%;
+	border:0px;
+	border-radius:10px;
+	font-family:Montserrat;
+	line-height:1.5em;
+	text-align:center;
+	font-size:20px;
+	color:#979797;
+}
+
+.contact-button{
+	width:100%;
+	padding:2%;
+	border:0px;
+	border-color:#3CC5FF;
+	background-color:#3CC5FF;
+	color:#FFFFFF;
+	font-size:15px;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.contact-button:hover{
+	background-color:#FFFFFF;
+	color:#979797;
+}
+
+
+/* RESPONSIVIDADE PARA TELAS DE ATÉ 1445PX */
+
+@media(max-width:1445px){
+
+	.navbar-link{
+		font-size:15px!important;
+	}
+	
+	.language-selector{
+		font-size:15px!important;
+	}
+	
+	.header{
+		margin:75px10%75px10%!important;
+	}
+
+	.title{
+		font-size:50px!important;
+		line-height:1.5em!important;
+	}
+
+	.description{
+		font-size:20px!important;
+		line-height:1.5em!important;
+	}
+	
+	.subtitle{
+		font-size:30px!important;
+		line-height:1.5em!important;
+		font-weight:normal!important;
+		text-decoration:none!important;
+	}
+
+	.text{
+		font-size:20px!important;
+		line-height:1.5em!important;
+		text-decoration:none!important;
+	}
+	
+	.content-link{
+		font-size:20px!important;
+		line-height:1.5em!important;
+	}
+	
+	.footer{
+		width:80%!important;
+		padding:10%10%0%10%!important;
+		height:35%!important;
+	}
+	
+	.footer-content{
+		width:100%!important;;
+	}
+
+	.sitemap{
+		font-size:15px!important;
+		line-height:2em!important;
+	}
+
+	.homepage-title{
+		font-size:35px!important;
+	}
+
+	.homepage-description{
+		font-size:20px!important;
+	}
+
+	.homepage-search{
+		width:25%!important;
+		height:50%!important;
+		padding:4%!important;
+		margin: 0% 0% 0% 0%!important;
+	}
+
+	.homepage-input{
+		width:100%!important;
+		height:40%!important;
+		margin: 10% 0% 10% 0%!important;
+		font-size:15px!important;
+	}
+	
+	.space{
+		height: 75px!important;
+	}
+	
+	.halfspace{
+		height:35px!important;
+	}
+
+	.partner{
+		width:200px!important;
+		height:115px!important;
+	}
+	
+	.member{
+		width:100px!important;
+		height:100px!important;
+	}
+	
+	.card-title{
+		font-size:15px!important;
+	}
+
+	.card-text{
+		font-size:12px!important;
+	}
+
+	.homepage-title{
+		font-size:25px!important;
+	}
+
+	.homepage-description{
+		font-size:20px!important;
+	}
+
+	.homepage-search{
+		width:25%!important;
+		height:50%!important;
+		padding:4%!important;
+		margin: 0% 0% 0% 0%!important;
+	}
+
+	.homepage-input{
+		width:100%!important;
+		height:40%!important;
+		margin: 10% 0% 10% 0%!important;
+		font-size:15px!important;
+	}
+	
+	.contact-textarea{
+		font-size:20px!important;
+		padding:12%!important;
+	}
+}
+
+/* RESPONSIVIDADE PARA TELAS DE ATÉ 835PX */
+
+@media(max-width:835px){	
+	.navbar{
+		display:none!important;
+	}
+	
+	.navbar-mobile{
+		display:block!important;
+		width:98%!important;
+		height:10%!important;
+		padding:1%!important;
+		background-color:#0B64E1!important;
+	}
+	
+	.mobile-toggle{			
+		vertical-align:middle!important;
+		text-align:center!important;
+	}
+	
+	.header{
+		margin:75px10%75px10%!important;
+	}
+
+	.title{
+		font-size:50px!important;
+		line-height:1.5em!important;
+	}
+
+	.description{
+		font-size:20px!important;
+		line-height:30px!important;
+	}
+	
+	.subtitle{
+		font-size:30px!important;
+		line-height:1.5em!important;
+		font-weight:normal!important;
+		text-decoration:none!important;
+	}
+
+	.text{
+		font-size:20px!important;
+		line-height:1.5em!important;
+		text-decoration:none!important;
+	}
+
+	.content-link{
+		font-size:20px!important;
+		line-height:1.5em!important;
+	}
+	
+	.footer{
+		width:90%!important;
+		padding:10%0%0%10%!important;
+		height:30%!important;
+	}
+	
+	.footer-content{
+		width:100%!important;
+	}
+	
+	.sitemap{
+		font-size:15px!important;
+		line-height:2em!important;
+	}
+	
+	.space{
+		height:75px!important;
+	}
+	
+	.halfspace{
+		height:35px!important;
+	}
+	
+	.button-secondary{
+		line-height:2.0em!important;
+	}
+	
+	.partner{
+		width:125px!important;
+		height:75px!important;
+	}
+	
+	.member{
+		width:50px!important;
+		height:50px!important;
+	}
+	
+	.section-logo{
+		margin: 10% 5% 5% 15%!important;
+	}
+	
+	.section-text{
+		font-size:15px!important;
+		line-height:1.5em!important;
+		text-decoration:none!important;
+		color:#FFFFFF!important;
+		padding: 20% 0% 5% 0%!important
+	}
+
+	.homepage-title{
+		font-size:25px!important;
+	}
+
+	.homepage-description{
+		font-size:20px!important;
+	}
+	
+	.homepage-search{
+		width:30%!important;
+		height:60%!important;
+		margin:15% 0% 0% 2%!important;
+		padding:0px!important;
+	}
+	
+	.homepage-input{
+		width:100%!important;
+		height:25%!important;
+		padding:0%!important;
+		margin:0%!important;
+		font-size:15px!important;
+	}
+		
+	.card{
+		width:46%!important;
+		padding:2%!important;
+		margin:0%!important;
+	}
+	
+	.card-image{
+		height: 25%!important;
+	}
+	
+	.card-title{
+		height:5%!important;
+		font-size:15px!important;
+	}
+	
+	.card-text{
+		font-size:12px!important;
+	}
+	
+	.card-button{
+		width:100%!important;
+		padding:5%!important;
+	}
+	
+	.contact-textarea{
+		font-size:15px!important;
+		padding:19%!important;
+	}
+	
+}
+
+/* RESPONSIVIDADE PARA TELAS DE ATÉ 650PX */
+
+@media(max-width:650px){
+	
+	.navbar{
+		display:none!important;
+	}
+	
+	.navbar-mobile{
+		display:block!important;
+		width:98%!important;
+		height:10%!important;
+		padding:1%!important;
+		background-color:#0B64E1!important;
+	}
+	
+	.mobile-toggle{			
+		vertical-align:middle!important;
+		text-align:center!important;
+	}
+	
+	.header{
+		margin:0% 10% 0% 10%!important;
+	}
+	
+	.title{
+		font-size:35px!important;
+		line-height:1.5em!important;
+	}
+
+	.description{
+		font-size:15px!important;
+		line-height:1.5em!important;
+	}
+	
+	.subtitle{
+		font-size:25px!important;
+		line-height:1.5em!important;
+		font-weight:normal!important;
+		text-decoration:none!important;
+	}
+	
+	.text{
+		font-size:15px!important;
+		line-height:1.5em!important;
+		text-decoration:none!important;
+	}
+	
+	.content-link{
+		font-size:15px!important;
+		line-height:1.5em!important;
+	}
+	
+	.footer{
+		display:none!important;
+	}
+
+	.footer-mobile{
+		display:block!important;
+		width:70%!important;
+		padding:15%15%0%15%!important;
+		height:20%!important;
+		background-color:#0B64E1!important;
+		font-family:Montserrat!important;
+		font-size:15px!important;
+		color:#FFFFFF!important;
+		line-height:1.5em!important;
+		clear:both!important;
+	}
+	
+	.space{
+		height: 50px!important;
+	}
+	
+	.halfspace{
+		height:25px!important;
+	}
+	
+	.button-primary{
+		width:100%!important;
+	}
+	
+	.button-secondary{
+		line-height:2.0em!important;
+	}
+	
+	.partner{
+		width:125px!important;
+		height:75px!important;
+	}
+	
+	.member{
+		width:50px!important;
+		height:50px!important;
+	}
+	
+	.section-logo{
+		margin: 10% 5% 5% 15%!important;
+	}
+	
+	.section-text{
+		font-size:15px!important;
+		line-height:1.5em!important;
+		text-decoration:none!important;
+		color:#FFFFFF!important;
+		padding: 20% 0% 5% 0%!important
+	}
+
+	.homepage-title{
+		font-size:20px!important;
+	}
+
+	.homepage-description{
+		font-size:15px!important;
+	}
+
+	.homepage-search{
+		width:32%!important;
+		height:55%!important;
+		margin:26% 0% 0% 1%!important;
+		padding:0px!important;
+	}
+	
+	.homepage-input{
+		width:100%!important;
+		height:25%!important;
+		padding:0%!important;
+		margin:0%!important;
+		font-size:10px!important;
+	}
+	
+	.contact-textarea{
+		font-size:15px!important;
+		padding:22%!important;
+	}
+	
+	.card-text{
+		height:18%!important;
+	}
+
+}
